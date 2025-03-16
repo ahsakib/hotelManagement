@@ -106,7 +106,7 @@ The `users` table contains the following sample data for login:
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/ahsakib/hotelManagement.git
-   cd hotel-management-system
+   cd hotelManagement
    ```
 
 2. **Set Up the Database**:
@@ -166,5 +166,3 @@ For any questions or feedback, feel free to reach out:
 
 ---
 ```
-
----
