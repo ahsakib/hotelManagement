@@ -3,10 +3,6 @@
 ```markdown
 # Hotel Management System
 
-![Java](https://img.shields.io/badge/Java-17-blue)
-![MySQL](https://img.shields.io/badge/MySQL-8.0-orange)
-![Swing](https://img.shields.io/badge/Java%20Swing-GUI-green)
-
 A **Hotel Management System** built using Java and MySQL to manage hotel operations efficiently. This system provides a user-friendly interface for handling room bookings, customer details, and revenue tracking.
 
 ---
@@ -78,6 +74,10 @@ CREATE TABLE `users` (
   `username` varchar(50) NOT NULL,
   `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+INSERT INTO `users` (`id`, `username`, `password`) VALUES
+(1, 'admin', 'admin123');
+
 ```
 
 ---
@@ -105,14 +105,14 @@ The `users` table contains the following sample data for login:
 ### Steps to Run the Project
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/hotel-management-system.git
+   git clone https://github.com/ahsakib/hotelManagement.git
    cd hotel-management-system
    ```
 
 2. **Set Up the Database**:
    - Open MySQL Workbench or any MySQL client.
    - Create a new database named `HotelManagement`.
-   - Import the SQL file (`hotel_management.sql`) located in the `database` folder to set up the required tables.
+   - Import the SQL file (`HotelManagement.sql`) located in the `database` folder to set up the required tables.
 
 3. **Configure Database Connection**:
    - Open the `DBConnection.java` file.
@@ -120,23 +120,26 @@ The `users` table contains the following sample data for login:
 
 4. **Run the Application**:
    - Open the project in IntelliJ IDEA or any Java IDE.
-   - Build and run the `Dashboard.java` file to start the application.
+   - Build and run the `HotelManagement.java` file to start the application.
 
 ---
 
 ## Screenshots
 
+### Login
+![Login](/picture/login.png)
+
 ### Dashboard
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](/picture/dashboard.png)
 
 ### Room Management
-![Room Management](screenshots/room_management.png)
+![Room Management](/picture/rooms.png)
 
 ### Customer Management
-![Customer Management](screenshots/customer_management.png)
+![Customer Management](/picture/customer.png)
 
 ### Booking Management
-![Booking Management](screenshots/booking_management.png)
+![Booking Management](/picture/booking.png)
 
 ---
 
@@ -157,18 +160,11 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 For any questions or feedback, feel free to reach out:
-- **Name**: Your Name
-- **Email**: your.email@example.com
-- **GitHub**: [your-username](https://github.com/your-username)
+- **Name**: Anowar Shakib
+- **Email**: ahshakib572@gmail.com
+- **GitHub**: [ahsakib](https://github.com/ahsakib)
 
 ---
 ```
 
 ---
-
-### How to Use:
-1. Replace placeholders like `your-username`, `your.email@example.com`, and `Your Name` with your actual details.
-2. Add screenshots of your application to the `screenshots` folder and update the paths in the README.md file.
-3. Push the updated README.md file to your GitHub repository.
-
-This README.md file will provide a clear and professional overview of your project, including the database schema and login credentials for testing.
